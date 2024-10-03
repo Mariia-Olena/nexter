@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node-sass sass/main.scss css/style.css -w"
+    "start": "npx sass --watch sass/main.scss:css/style.css"
   },
   "author": "Mariia-Olena",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "sass": "^1.79.4"
+  }
 }
